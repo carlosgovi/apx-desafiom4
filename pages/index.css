@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* BIENVENIDA */
+.bienvenida__conteiner {
+  width: 100vw;
+  height: 616px;
+  background-image: url("../img/imagen_bienvenida.png");
+}
+.bienvenida__conteiner-titulos {
+  height: 546px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.bienvenida__titulo {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+}
+.bienvenida__subtitulo {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+}
+/* SOBRE MI */
+.sobremi__section {
+  background-color: #141414;
+  width: 100vw;
+  height: 538px;
+}
+@media (min-width: 960px) {
+  .sobremi__section {
+    background-color: #ffffff;
+  }
+}
+.sobremi__conteiner {
+  height: 538px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  text-align: center;
+  padding: 50px 30px;
+}
+@media (min-width: 960px) {
+  .sobremi__conteiner {
+    padding: 45px 5%;
+    padding-right: 45px;
+  }
+}
+.fotoperfil__conteiner {
+  display: none;
+  width: 380px;
+  height: 480px;
+}
+@media (min-width: 960px) {
+  .fotoperfil__conteiner {
+    display: inherit;
+  }
+}
+.titulo-parrafo__conteiner {
+  padding: 40px;
+  max-height: 340px;
+}
+.sobremi-titulo {
+  color: white;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+}
+@media (min-width: 960px) {
+  .sobremi-titulo {
+    color: #2c2c2c;
+    text-align: justify;
+  }
+}
+.sobremi-parrafo {
+  text-align: initial;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+  margin: 50px auto;
+}
+@media (min-width: 960px) {
+  .sobremi-parrafo {
+    color: #2c2c2c;
+    font-size: 24px;
+    max-height: 340px;
+  }
+}
+/* SERVICIOS  */
+.servicios-logo {
+  width: 200px;
+  height: 190px;
+}
+.servicios__contenedor {
+  padding-bottom: 100px;
+}
+@media (min-width: 960px) {
+  .servicios-contenedor {
+    grid-template-rows: 400px;
+  }
+}
+
+/* MAIL */
+.form__conteiner {
+  height: 100%;
+  background-color: black;
+}
