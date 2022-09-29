@@ -54,6 +54,7 @@ function contacto(el) {
     const email = e.target.email.value;
     const mensaje = e.target.textarea.value;
     enviarMail(nombre, email, mensaje);
+    enviarMailRemitente(nombre, email, mensaje);
     formularioEl.reset();
     modalEnviado();
     setTimeout(() => {
@@ -72,6 +73,17 @@ function enviarMail(nombre, email, mensaje) {
       message: `Nombre:${nombre}
        Email:${email}
        Mensaje:${mensaje}`,
+    }),
+  });
+}
+function enviarMailRemitente(nombre, email, mensaje) {
+  fetch("https://apx-api.vercel.app/api/utils/dwf", {
+    method: "POST",
+    headers: { "content-type": "application/json" },
+    body: JSON.stringify({
+      to: `${email}`,
+      message: `${nombre} -
+      - Sus datos fueron enviados, gracias por comunicarse con nosotros. `,
     }),
   });
 }
