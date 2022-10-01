@@ -28,8 +28,6 @@ function addCardsConUrl(el, titulo, parrafo, img, url) {
 }
 //////proceso datos para enviar a pages servicios
 function procesDataServicios(datos) {
-  console.log(datos);
-
   datos.items.map((item) => {
     let titulo;
     let parrafo;
@@ -54,8 +52,6 @@ function procesDataServicios(datos) {
 }
 ////proseso datos para enviar a portafolio
 function procesDataPortfolio(datos) {
-  console.log(datos);
-
   datos.items.map((item) => {
     let titulo;
     let parrafo;
@@ -81,8 +77,6 @@ function procesDataPortfolio(datos) {
 
 ////proceso datos para enviar a pages index
 function procesData(datos) {
-  console.log(datos);
-
   datos.items.map((item) => {
     let titulo;
     let parrafo;
